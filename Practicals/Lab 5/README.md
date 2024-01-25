@@ -5,7 +5,3 @@
 ### Target Audience
 
 ### Key Features
-
-### Challanges
-
-### Straight forward
