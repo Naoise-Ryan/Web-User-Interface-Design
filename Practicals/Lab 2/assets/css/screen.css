@@ -1,4 +1,4 @@
-html, body {
+* {
     margin:0;
     padding:0;
     border: 0;
@@ -17,7 +17,6 @@ nav {
 }
 
 nav ul {
-    background-color: rgb(71, 134, 132);
     list-style-type: none;
 }
 
