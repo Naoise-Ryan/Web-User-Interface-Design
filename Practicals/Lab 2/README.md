@@ -1,5 +1,5 @@
 # Web-User-Interface-Design
-## Lab 1
+## Lab 2
 ### Website Purpose
 
 ### Target Audience

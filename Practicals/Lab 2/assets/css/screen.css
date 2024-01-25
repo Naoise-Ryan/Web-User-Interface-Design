@@ -1,0 +1,159 @@
+html, body {
+    margin:0;
+    padding:0;
+    border: 0;
+}
+
+header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    background-color: rgb(121, 184, 180);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+    background-color: rgb(71, 134, 132);
+    list-style-type: none;
+}
+
+nav li {
+    background-color: rgb(71, 134, 132);
+    float:left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+section {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+article {
+    background-color: rgb(200, 236, 243);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+aside {
+    width: 10%;
+    float: right;
+    text-align: center;
+    padding-bottom: 34.25%;
+    background-color: rgb(117, 179, 177);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer {
+    background-color: rgb(40, 87, 87);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    height: auto;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.asideContent {
+    margin: 10px;
+}
+
+h1 {
+    margin:0;
+}
+
+.activeButton {
+    color:rgb(3, 3, 3);
+    background-color: rgb(241, 219, 16);
+}
+
+img {
+    display: block;
+}
+
+.sectionTitle {
+    margin: 0;
+    padding: 1%;
+    background-color: rgb(52, 100, 99);
+}
+
+.sectionBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.productBox {
+    background-color: rgb(124, 218, 216);
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 250px;
+}    
+.productBox2 {
+    background-color: rgb(50, 177, 175);
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 250px;
+}    
+
+.productText {
+    float: left;
+    padding-left: 20px;
+    width: 50%;
+}
+
+.productImage {
+    padding-left: 10%;
+    float: right;
+    width: 30%;
+    height: auto;
+}
+
+.infoSection {
+    width: 50%;
+    background-color: rgb(71, 134, 132);
+    color: white;
+}
+
+.aboutUsSection {
+    width: 50%;
+    text-align: center;
+    background-color: rgb(71, 134, 132);
+    color: white;
+}
+
+.contactUsSection {
+    text-align: center;
+    background-color: rgb(71, 134, 132);
+    color: white;
+    padding-bottom: 20px;
+}
+
+.alignRight {
+    float: right;
+}
+
+.alignLeft {
+    float:left;
+}
+
+.pHighlight {
+    color: yellow;
+    font-weight: bold;
+}
+
+.imgRound {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+}
