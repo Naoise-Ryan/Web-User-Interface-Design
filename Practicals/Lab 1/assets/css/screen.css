@@ -146,3 +146,13 @@ img {
 .alignLeft {
     float:left;
 }
+
+.pHighlight {
+    color: yellow;
+    font-weight: bold;
+}
+
+.imgRound {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+}
