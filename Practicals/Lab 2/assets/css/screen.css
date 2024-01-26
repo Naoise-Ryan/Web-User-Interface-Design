@@ -66,10 +66,18 @@ nav li a {
     text-decoration: none;
 }
 
+nav li a:hover {
+    background-color: rgb(71, 88, 132);
+}
+
 /*Nav Buttons*/
 .activeButton {
     color: rgb(3, 3, 3);
     background-color: rgb(241, 219, 16);
+}
+
+.activeButton:hover {
+    background-color: rgb(241, 173, 16);
 }
 
 /*-----Aside stuff*/

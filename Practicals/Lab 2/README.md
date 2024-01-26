@@ -13,6 +13,7 @@ Cleaned up the html lab 1 to make it all more constistant and less duplicate sty
 Remade and organised all of the css files into a more consistant style and removed duplicates
 Made cover image on home page scale with the size of the window
 Added media query to resize content on home page
+Added on hover to nav bar to change color when you hover over a link
 
 #### JS
 
