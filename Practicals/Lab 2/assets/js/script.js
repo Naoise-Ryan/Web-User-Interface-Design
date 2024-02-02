@@ -5,10 +5,10 @@ window.onload = function() {
 let clicked = false 
 document.querySelector("Header").addEventListener("click", function() {
     if (!clicked) {
-        changeStyle(true, "150px", "Yellow")
+        changeStyle(true, "500%", "Yellow")
     }
     else {
-        changeStyle(false, "38px", "Black")
+        changeStyle(false, "200%", "Black")
     }
 });
 

@@ -16,6 +16,8 @@ Made cover image on home page scale with the size of the window
 Added media query to resize content on home page
 Added on hover to nav bar to change color when you hover over a link
 Styled a table and form
+Made the form and table look like the rest of the site
+Made the image of the man scale with screen size
 #### JS
 Preventing Submits from submitting data when enter pressed
 
