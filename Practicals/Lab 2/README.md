@@ -27,3 +27,4 @@ https://www.w3schools.com/html/html_table_borders.asp
 https://www.w3schools.com/html/html_table_styling.asp
 https://www.w3schools.com/html/html_forms.asp
 https://stackoverflow.com/questions/12278571/html-text-input-avoid-submit-when-enter-is-pressed
+https://stackoverflow.com/questions/74612/how-do-i-make-an-html-table-the-same-width-as-its-containing-div-tag

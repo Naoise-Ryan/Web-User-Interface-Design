@@ -129,8 +129,8 @@ nav li a:hover {
 }
 
 .normalImage {
-    max-width: 400px;
-    max-height: 300px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /*------Product Page*/
@@ -170,10 +170,20 @@ nav li a:hover {
 
 /*----------------Tables
 */
+.formTableBox {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
 table, th, td {
     border-collapse: collapse;
     padding: 20px;
     color: white;
+}
+
+table {
+    width: 100%;
 }
 
 th:hover, td:hover {
@@ -214,6 +224,7 @@ input {
 }
 
 .formContainer {
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: rgb(71, 134, 132);
 }
