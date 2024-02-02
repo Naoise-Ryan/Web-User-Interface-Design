@@ -4,27 +4,24 @@
     border: 0;
 }
 
+header, nav, article, section, aside, footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 header {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgb(121, 184, 180);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 nav {
     background-color: rgb(71, 134, 132);
     display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 article {
     background-color: rgb(200, 236, 243);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-section {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 aside {
@@ -32,13 +29,11 @@ aside {
     text-align: center;
     display: flex;
     background-color: rgb(117, 179, 177);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 footer {
     background-color: rgb(40, 87, 87);
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow: hidden;
     height: auto;
     color: white;
@@ -170,6 +165,7 @@ nav li a:hover {
     margin-left: auto;
     margin-right: auto;
     align-content: center;
+    text-align: center;
 }
 
 /*----------------Tables
@@ -189,5 +185,35 @@ th {
 }
 
 td {
+    background-color: rgb(71, 134, 132);
+}
+
+.tableContainer {
+    overflow-x: auto;
+}
+
+/*---------------------Forms
+*/
+form, label, input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form {
+    color: rgb(255, 255, 255);
+}
+
+label {
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.formContainer {
+    padding-top: 10px;
     background-color: rgb(71, 134, 132);
 }

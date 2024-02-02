@@ -17,7 +17,7 @@ Added media query to resize content on home page
 Added on hover to nav bar to change color when you hover over a link
 Styled a table and form
 #### JS
-
+Preventing Submits from submitting data when enter pressed
 
 ### References
 https://stackoverflow.com/questions/8722163/how-to-assign-multiple-classes-to-an-html-container
@@ -26,3 +26,4 @@ https://www.bing.com/search?pglt=171&q=media+query+css&cvid=ec971898822f469f9196
 https://www.w3schools.com/html/html_table_borders.asp
 https://www.w3schools.com/html/html_table_styling.asp
 https://www.w3schools.com/html/html_forms.asp
+https://stackoverflow.com/questions/12278571/html-text-input-avoid-submit-when-enter-is-pressed

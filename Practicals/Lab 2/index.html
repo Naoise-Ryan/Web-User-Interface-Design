@@ -32,65 +32,64 @@
         <section>
             <img src="assets/imgs/Window.jpg" alt="Window" class="coverImage">
         </section>
-
-        <article>
-            <div class="boxParent">
-                <!--Home section-->
-                <section class="homeSections homeSectionsHalf">
-                    <h2 class="sectionTitle">Why we are the best!</h2>
+        <div class="boxParent">
+            <!--Home section-->
+            <section class="homeSections homeSectionsHalf">
+                <h2 class="sectionTitle">Why we are the best!</h2>
+                <div class="sectionContent">
+                    <h3>Fun Facts!</h3>
+                    <ul>
+                        <li>Our windows are made with <span class="pHighlight">100% Irish
+                                materials</span>
+                        </li>
+                        <li>We can fulfill your order within two weeks</li>
+                        <li>Our new window technology makes our windows <span class="pHighlight">99%
+                                durable</span></li>
+                        <li>The world has never looked clearer</li>
+                        <li>We produce all our parts in house</li>
+                    </ul>
+                </div>
+            </section>
+            <!--About us section-->
+            <section class="homeSections homeSectionsHalf">
+                <h2 class="sectionTitle" id="About">About the owner</h2>
+                <div class="boxParent">
                     <div class="sectionContent">
-                        <h3>Fun Facts!</h3>
-                        <ul>
-                            <li>Our windows are made with <span class="pHighlight">100% Irish
-                                    materials</span>
-                            </li>
-                            <li>We can fulfill your order within two weeks</li>
-                            <li>Our new window technology makes our windows <span class="pHighlight">99%
-                                    durable</span></li>
-                            <li>The world has never looked clearer</li>
-                            <li>We produce all our parts in house</li>
-                        </ul>
+                        <h3>John Doe</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Morbi dignissim risus et ante malesuada iaculis. Etiam pretium, velit eu ornare
+                            accumsan,
+                            arcu massa iaculis erat, in sodales mauris ipsum ac quam. Aliquam erat volutpat.
+                            Maecenas facilisis cursus dictum. Morbi tempus, orci quis molestie venenatis,
+                            leo dolor dictum nibh, vel ultricies nisi arcu eu libero. Praesent a elit quam.
+                            Nullam commodo pretium quam non mollis. Aliquam eu enim ut ante rhoncus efficitur at
+                            nec
+                            ex.
+                            Vestibulum ac libero ac odio scelerisque sagittis sed eu ante. In nibh felis,
+                            sollicitudin in maximus vitae, vestibulum non tortor.
+                        </p>
                     </div>
-                </section>
-                <!--About us section-->
-                <section class="homeSections homeSectionsHalf">
-                    <h2 class="sectionTitle" id="About">About the owner</h2>
-                    <div class="boxParent">
-                        <div class="sectionContent">
-                            <h3>John Doe</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Morbi dignissim risus et ante malesuada iaculis. Etiam pretium, velit eu ornare
-                                accumsan,
-                                arcu massa iaculis erat, in sodales mauris ipsum ac quam. Aliquam erat volutpat.
-                                Maecenas facilisis cursus dictum. Morbi tempus, orci quis molestie venenatis,
-                                leo dolor dictum nibh, vel ultricies nisi arcu eu libero. Praesent a elit quam.
-                                Nullam commodo pretium quam non mollis. Aliquam eu enim ut ante rhoncus efficitur at
-                                nec
-                                ex.
-                                Vestibulum ac libero ac odio scelerisque sagittis sed eu ante. In nibh felis,
-                                sollicitudin in maximus vitae, vestibulum non tortor.
-                            </p>
-                        </div>
-                        <div class="sectionContent">
-                            <img src="assets/imgs/John.jpg" alt="Man" class="normalImage">
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <!--Contact us-->
-            <section class="homeSections">
-                <div class="centerDiv">
-                    <h2 class="sectionTitle" id="Contact">Contact Us</h2>
                     <div class="sectionContent">
-                        <p>Phone Number - 012 345 6789</p>
-                        <p>Email Address - IrishWindows@mail.com</p>
-                        <p>Address - 9157 whatever street, downtown</p>
+                        <img src="assets/imgs/John.jpg" alt="Man" class="normalImage">
                     </div>
                 </div>
             </section>
-            <section>
-                <table class="centerDiv">
+        </div>
+        <!--Contact us-->
+        <section class="homeSections">
+            <div class="centerDiv">
+                <h2 class="sectionTitle" id="Contact">Contact Us</h2>
+                <div class="sectionContent">
+                    <p>Phone Number - 012 345 6789</p>
+                    <p>Email Address - IrishWindows@mail.com</p>
+                    <p>Address - 9157 whatever street, downtown</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <table class="centerDiv">
+                <div class="tableContainer">
                     <tr>
                         <th>Profits</th>
                         <th>Revenue</th>
@@ -103,31 +102,33 @@
                         <td>62363223.24$</td>
                         <td>3568542.34$</td>
                     </tr>
-                </table>
-            </section>
-            <section>
+            </table>
+            </div>
+        </section>
+        <section>
+            <div class="formContainer centerDiv">
                 <form>
-                    <label for="">First name:</label><br>
-                    <input type="text" id=""><br>
-                    <label for="">Last name:</label><br>
-                    <input type="text" id=""><br><br>
+                    <label for="">New number:</label><br>
+                    <input type="text" id="homeFormId" onkeydown="if(event.keyCode == 13){return false}"><br>
+                    <!--If you press enter it doesnt submit data-->
                     <input type="submit" value="Submit">
                 </form>
-            </section>
-        </article>
-        <!--Footer-->
-        <footer>
-            <h1>Footer</h1>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim risus et ante malesuada iaculis.
-            Etiam pretium, velit eu ornare accumsan, arcu massa iaculis erat, in sodales mauris ipsum ac quam.
-            Aliquam erat volutpat. Maecenas facilisis cursus dictum. Morbi tempus, orci quis molestie venenatis,
-            leo dolor dictum nibh, vel ultricies nisi arcu eu libero. Praesent a elit quam.
-            Nullam commodo pretium quam non mollis. Aliquam eu enim ut ante rhoncus efficitur at nec ex.
-            Vestibulum ac libero ac odio scelerisque sagittis sed eu ante. In nibh felis, sollicitudin in maximus vitae,
-            vestibulum non tortor.
-        </footer>
+        </section>
+        </div>
+    </article>
+    <!--Footer-->
+    <footer>
+        <h1>Footer</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim risus et ante malesuada iaculis.
+        Etiam pretium, velit eu ornare accumsan, arcu massa iaculis erat, in sodales mauris ipsum ac quam.
+        Aliquam erat volutpat. Maecenas facilisis cursus dictum. Morbi tempus, orci quis molestie venenatis,
+        leo dolor dictum nibh, vel ultricies nisi arcu eu libero. Praesent a elit quam.
+        Nullam commodo pretium quam non mollis. Aliquam eu enim ut ante rhoncus efficitur at nec ex.
+        Vestibulum ac libero ac odio scelerisque sagittis sed eu ante. In nibh felis, sollicitudin in maximus vitae,
+        vestibulum non tortor.
+    </footer>
 
-        <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
