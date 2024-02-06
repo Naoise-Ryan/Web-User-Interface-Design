@@ -19,3 +19,9 @@ function changeStyle(clickedStatus, t_size, t_color){
     h1PathStyle.fontSize = t_size;
     h1PathStyle.color = t_color;
 }
+
+function receiveForm(){
+    let newData = document.getElementById("moneyId").value;
+    alert("Input received")
+}
+
