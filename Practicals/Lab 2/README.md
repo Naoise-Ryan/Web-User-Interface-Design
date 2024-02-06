@@ -20,6 +20,7 @@ Made the form and table look like the rest of the site
 Made the image of the man scale with screen size
 #### JS
 Preventing Submits from submitting data when enter pressed
+Added JS to let you enter data into the form and then change the tables data
 
 ### References
 https://stackoverflow.com/questions/8722163/how-to-assign-multiple-classes-to-an-html-container

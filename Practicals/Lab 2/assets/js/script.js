@@ -22,6 +22,6 @@ function changeStyle(clickedStatus, t_size, t_color){
 
 function receiveForm(){
     let newData = document.getElementById("moneyId").value;
-    alert("Input received")
+    document.getElementById("moneyTableId").rows[1].cells[2].innerHTML = newData + "$";
 }
 
