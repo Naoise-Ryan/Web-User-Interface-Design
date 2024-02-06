@@ -22,6 +22,11 @@ function changeStyle(clickedStatus, t_size, t_color){
 
 function receiveForm(){
     let newData = document.getElementById("moneyId").value;
-    document.getElementById("moneyTableId").rows[1].cells[2].innerHTML = newData + "$";
+    if(newData === ""){
+        alert("Form cannot be empty")
+    }
+    else{
+        document.getElementById("moneyTableId").rows[1].cells[2].innerHTML = newData + "$";
+    }
 }
 
