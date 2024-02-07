@@ -21,6 +21,8 @@ Made the image of the man scale with screen size
 #### JS
 Preventing Submits from submitting data when enter pressed
 Added JS to let you enter data into the form and then change the tables data
+Added Regex to only allow numbers 
+Added a prevent default to stop page refresh with the form
 
 ### References
 https://stackoverflow.com/questions/8722163/how-to-assign-multiple-classes-to-an-html-container
