@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Irish Windows - Products</title>
+    <link rel="stylesheet" href="assets/css/screen.css">
+</head>
+
+<body>
+    <header>
+        <h1>Irish Windows</h1>
+        <h2>Making windows since 1995</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a class="activeButton" href="mailingList.html">Join our mailing list</a></li>
+            <li><a href="index.html#Contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <section>
+            <div class="formContainer centerDiv">
+                <form id="homeFormId" onsubmit="receiveMailForm()">
+                    <label>Name</label><br>
+                    <input type="text" id="mailNameId" onkeydown="if(event.keyCode == 13){return false}"><br>
+                    <label>Email</label><br>
+                    <input type="email" id="mailEmailId" onkeydown="if(event.keyCode == 13){return false}"><br>
+                    <label>Phone Number</label><br>
+                    <input type="number" id="mailPhoneId" onkeydown="if(event.keyCode == 13){return false}"><br>
+                    <label>Do you want to receive promotional emails</label><br>
+                    <input type="checkbox" id="mailCheckboxId"><br>
+                    <input type="submit" value="Submit">
+                </form>
+                <h2>Name :</h2>
+                <p id="nameTextId"></p>
+                <h2>Email :</h2>
+                <p id="emailTextId"></p>
+                <h2>Phone Number :</h2>
+                <p id="phoneTextId"></p>
+                <h2>Promotional signup :</h2>
+                <p id="checkboxTextId"></p>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <h1>Footer</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim risus et ante malesuada iaculis.
+        Etiam pretium, velit eu ornare accumsan, arcu massa iaculis erat, in sodales mauris ipsum ac quam.
+        Aliquam erat volutpat. Maecenas facilisis cursus dictum. Morbi tempus, orci quis molestie venenatis,
+        leo dolor dictum nibh, vel ultricies nisi arcu eu libero. Praesent a elit quam.
+        Nullam commodo pretium quam non mollis. Aliquam eu enim ut ante rhoncus efficitur at nec ex.
+        Vestibulum ac libero ac odio scelerisque sagittis sed eu ante. In nibh felis, sollicitudin in maximus vitae,
+        vestibulum non tortor.
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
