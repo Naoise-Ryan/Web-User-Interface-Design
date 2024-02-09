@@ -25,10 +25,8 @@ article {
 }
 
 aside {
-    float: right;
-    text-align: center;
-    display: flex;
-    background-color: rgb(117, 179, 177);
+    background-color: rgb(166, 179, 117);
+    color: red;
 }
 
 footer {
@@ -103,19 +101,6 @@ nav li a:hover {
     display: flex;
 }
 
-@media screen and (max-width: 800px) {
-    .homeSectionsHalf {
-        width: 100%;
-    }
-    
-    .boxParent {
-        display: block;
-    }
-  }
-
-.boxChildren {
-    float: left;
-}
 
 /*-----------------Page specific stuff
 */
@@ -227,4 +212,41 @@ input {
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: rgb(71, 134, 132);
+}
+
+.asideContainer {
+    display: flex;
+}
+
+.containerItem {
+    width: 90%;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+aside:hover {
+    background-color: aqua;
+}
+
+@media screen and (max-width: 800px) {
+    .homeSectionsHalf {
+        width: 100%;
+    }
+    
+    .boxParent {
+        display: block;
+    }
+    aside {
+        display: none;
+    }
+    .containerItem {
+        width: 100%;
+    }
+  }
+
+.boxChildren {
+    float: left;
 }
