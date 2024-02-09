@@ -33,6 +33,28 @@ function receiveForm() {
     }
 }
 
+function receiveMailForm() {
+    let nameData = document.getElementById("mailNameId").value;
+    let emailData = document.getElementById("mailEmailId").value;
+    let phoneData = document.getElementById("mailPhoneId").value;
+    let checkboxData = document.getElementById("mailCheckboxId").checked;
+    console.log(nameData, emailData, phoneData, checkboxData)
+    var regExPattern = /^[0-9]*$/;
+
+    if(nameData === "" || emailData === "" || phoneData === ""){
+        alert("You did not fill out a data field")
+    }
+    else if (nameData.match(regExPattern)) {
+        alert("Name cannot contain numbers")
+    }
+    else {
+        document.getElementById("nameTextId").innerHTML = nameData;
+        document.getElementById("emailTextId").innerHTML = emailData;
+        document.getElementById("phoneTextId").innerHTML = phoneData;
+        document.getElementById("checkboxTextId").innerHTML = checkboxData;
+    }
+}
+
 //Stops page reload on form submit
 var homeForm = document.getElementById("homeFormId")
 

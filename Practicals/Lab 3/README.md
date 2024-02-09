@@ -13,6 +13,7 @@ Put the aside and articles in a flex box for layout
 
 #### CSS
 Made the aside appear on the right side of the screen
+Made the aside change color on hover
 #### JS
 Made the aside open a new window to a google link
 Made the home and page buttons redirect to the pages

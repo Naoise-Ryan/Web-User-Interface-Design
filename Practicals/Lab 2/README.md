@@ -10,6 +10,7 @@ People who want information and to buy a window
 #### HTML
 Cleaned up the html lab 1 to make it all more constistant and less duplicate style items
 Added in a table and form
+Added a new page in for a mailing list form
 #### CSS
 Remade and organised all of the css files into a more consistant style and removed duplicates
 Made cover image on home page scale with the size of the window
@@ -23,6 +24,8 @@ Preventing Submits from submitting data when enter pressed
 Added JS to let you enter data into the form and then change the tables data
 Added Regex to only allow numbers 
 Added a prevent default to stop page refresh with the form
+Made the mailing list form edit the information below form
+Made the mailing form check the data is valid
 
 ### References
 https://stackoverflow.com/questions/8722163/how-to-assign-multiple-classes-to-an-html-container
