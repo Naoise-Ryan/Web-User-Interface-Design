@@ -67,6 +67,10 @@ function redirectProduct(){
     window.location.href = "products.html";
 }
 
+function redirectMailList(){
+    window.location.href = "mailingList.html";
+}
+
 //Stops page reload on form submit
 var homeForm = document.getElementById("homeFormId")
 

@@ -119,24 +119,57 @@ nav li a:hover {
 }
 
 /*------Product Page*/
-.productBox {
+.productContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.productItem {
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 300px;
+    width: 75%;
     background-color: rgb(124, 218, 216);
-    display: flex;
-    height: 250px;
-    overflow: auto;
 }
 
-.productText {
-    float: left;
-    padding-left: 20px;
+.productItemAltColor {
+    background-color: rgb(124, 218, 187);
+}
+
+.productTextElements {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.productTextElements h2{
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.productTextElements button {
+    margin-top: 60px;
+    border-radius: 0px;
     padding-top: 20px;
-    width: 70%;
+    padding-bottom: 20px;
+    background-color: rgb(231, 142, 39);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    cursor: pointer;
 }
 
-.productImage {
-    display: flex;
-    width: 30%;
-    height: auto;
+.productTextElements button:hover {
+    background-color: rgb(185, 114, 32);
+}
+
+
+.productItem img {
+    border: 4px solid black;
+    border-radius: 5px;
 }
 
 /*------------------Other Universal

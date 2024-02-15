@@ -17,7 +17,7 @@
         <ul>
             <li><a onclick="redirectHome()">Home</a></li>
             <li><a class="activeButton" href="products.html">Products</a></li>
-            <li><a href="mailingList.html">Join our mailing list</a></li>
+            <li><a onclick="redirectMailList()">Join our mailing list</a></li>
             <li><a href="index.html#Contact">Contact Us</a></li>
         </ul>
     </nav>
@@ -30,46 +30,53 @@
     -->
 
     <article>
-        <!--Turn into a table-->
         <section>
-            <div class="productBox">
-                <div class="productText">
-                    <h2>Product 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Morbi dignissim risus et ante malesuada iaculis. Etiam pretium, velit eu ornare accumsan,
-                        arcu massa iaculis erat, in sodales mauris ipsum ac quam. Aliquam erat volutpat.
-                        Maecenas facilisis cursus dictum.</p>
-                </div>
-                <div class="productImage">
+            <div class="productContainer">
+                <div class="productItem centerDiv">
+                    <div class="productTextElements">
+                        <h2>Product 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Morbi dignissim risus et ante malesuada iaculis. Etiam pretium, velit eu ornare accumsan,
+                            arcu massa iaculis erat, in sodales mauris ipsum ac quam. Aliquam erat volutpat.
+                            Maecenas facilisis cursus dictum.</p>
+                            <button type="button" onclick="alert('Purchased item')">Purchase Item</button>
+                    </div>
                     <img src="assets/imgs/Window1.jpg" alt="Window" width="100%" height="100%">
                 </div>
             </div>
-            <div class="productBox" style="background-color: rgb(50, 177, 175)">
-                <div class="productText">
-                    <h2>Product 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Morbi dignissim risus et ante malesuada iaculis. Etiam pretium, velit eu ornare accumsan,
-                        arcu massa iaculis erat, in sodales mauris ipsum ac quam. Aliquam erat volutpat.
-                        Maecenas facilisis cursus dictum.</p>
-                </div>
-                <div class="productImage">
+        </section>
+        <section>
+            <div class="productContainer ">
+                <div class="productItem centerDiv productItemAltColor">
+                    <div class="productTextElements">
+                        <h2>Product 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Morbi dignissim risus et ante malesuada iaculis. Etiam pretium, velit eu ornare accumsan,
+                            arcu massa iaculis erat, in sodales mauris ipsum ac quam. Aliquam erat volutpat.
+                            Maecenas facilisis cursus dictum.</p>
+                            <button type="button" onclick="alert('Purchased item')">Purchase Item</button>
+                    </div>
                     <img src="assets/imgs/Window2.jpg" alt="Window" width="100%" height="100%">
                 </div>
             </div>
-            <div class="productBox">
-                <div class="productText">
-                    <h2>Product 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Morbi dignissim risus et ante malesuada iaculis. Etiam pretium, velit eu ornare accumsan,
-                        arcu massa iaculis erat, in sodales mauris ipsum ac quam. Aliquam erat volutpat.
-                        Maecenas facilisis cursus dictum.</p>
-                </div>
-                <div class="productImage">
+        </section>
+        <section>
+            <div class="productContainer">
+                <div class="productItem centerDiv">
+                    <div class="productTextElements">
+                        <h2>Product 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Morbi dignissim risus et ante malesuada iaculis. Etiam pretium, velit eu ornare accumsan,
+                            arcu massa iaculis erat, in sodales mauris ipsum ac quam. Aliquam erat volutpat.
+                            Maecenas facilisis cursus dictum.</p>
+                            <button type="button" onclick="alert('Purchased item')">Purchase Item</button>
+                    </div>
                     <img src="assets/imgs/Window3.jpg" alt="Window" width="100%" height="100%">
                 </div>
             </div>
         </section>
     </article>
+
     <footer>
         <h1>Footer</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim risus et ante malesuada iaculis.
