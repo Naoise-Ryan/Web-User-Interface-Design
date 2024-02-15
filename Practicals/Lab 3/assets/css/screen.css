@@ -21,12 +21,13 @@ nav {
 }
 
 article {
-    background-color: rgb(200, 236, 243);
+    background-color: rgb(255, 255, 255);
 }
 
 aside {
-    background-color: rgb(166, 179, 117);
-    color: red;
+    background-color: rgb(121, 184, 180);
+    color: white;
+    cursor: pointer;
 }
 
 footer {
@@ -132,11 +133,11 @@ nav li a:hover {
     padding: 10px;
     height: 300px;
     width: 75%;
-    background-color: rgb(124, 218, 216);
+    background-color: rgb(51, 167, 163);
 }
 
 .productItemAltColor {
-    background-color: rgb(124, 218, 187);
+    background-color: rgb(63, 199, 194);
 }
 
 .productTextElements {
@@ -262,7 +263,7 @@ button {
 }
 
 aside:hover {
-    background-color: aqua;
+    background-color: rgb(71, 134, 132);
 }
 
 @media screen and (max-width: 800px) {
