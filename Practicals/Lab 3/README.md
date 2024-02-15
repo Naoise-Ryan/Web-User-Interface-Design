@@ -12,6 +12,7 @@ Added back in the aside
 Put the aside and articles in a flex box for layout
 Updated products page to use flex boxs for the products
 Added purchase button to products
+Added thank you page
 
 #### CSS
 Made the aside appear on the right side of the screen
@@ -22,6 +23,6 @@ Changed the colors of some items
 
 #### JS
 Made the aside open a new window to a google link
-Made the home and page buttons redirect to the pages
+Made pressing purchase redirect to thank you page
 
 ### References

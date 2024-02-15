@@ -59,16 +59,8 @@ function openPage(){
     window.open("https://www.google.ie/search?sca_esv=884448dcb0ad80d4&q=prize&tbm=isch&source=lnms&sa=X&ved", "newwindow", "width=800", "height=800")
 }
 
-function redirectHome(){
-    window.location.href = "index.html";
-}
-
-function redirectProduct(){
-    window.location.href = "products.html";
-}
-
-function redirectMailList(){
-    window.location.href = "mailingList.html";
+function redirectThankYou(){
+    window.location.href = "thankYouForPurchasing.html";
 }
 
 //Stops page reload on form submit
