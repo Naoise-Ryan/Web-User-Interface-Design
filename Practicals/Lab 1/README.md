@@ -1,22 +1,36 @@
-# Web-User-Interface-Design
-## Lab 1
-### Website Purpose
-Window sales website to advertise and sell windows
+# Project Title: Irish Windows
 
-### Target Audience
-People who want to buy a window
+## Table of Contents
+- [Introduction](#introduction)
+- [Target Audience](#target-audience)
+- [Key Features](#key-features)
+- [Learning Reflections](#learning-reflections)
+- [Development Updates](#development-updates)
 
-### Key Features
-#### HTML
-Displays information about the company and owner and has a selection of windows to choose from
+## Introduction
+Irish windows is an online window selling store that lets customer browse and purchase windows. We also have a mailing list for users to keep up to date with
+new stock.
 
-#### CSS
-Styles and color for the website and images
+## Target Audience
+Our primary audience is people mid 20s upwards looking to buy a window for their homes or for companys that want to buy windows to install them.
 
-#### JS
-When you click the header the size and color of the first h1 on the page increases or decreases depending on if its already
-been clicked
+## Key Features
+- **Week 1:**
+- **Week 2:** 
+- **Week 3:** Flex box layout implemented, colors and styles changed and redirects and opening new tabs added
 
-### References
-https://www.w3schools.com/jsref/met_document_queryselector.asp
-To understand querys and event listeners
+## Learning Reflections
+### Challenges
+- **Week 1:**
+- **Week 2:**
+- **Week 3:** Getting the flex boxs to work took alot of research and reading of their documents to understand how to get them how I wanted them
+
+### Insights
+- **Week 1:**
+- **Week 2:**
+- **Week 3:** Learned how flex boxs work to move different sections and position them, Learned about redirecting and opening links.
+
+## Development Updates
+- **Week 1:**
+- **Week 2:**
+- **Week 3:** Added the aside in. Aside when clicked opens a new tab. Remade product page with flex boxes. Made Product page responsive on mobile. Made purchase button on product page redirect to a thank you page. Added hover css to elements

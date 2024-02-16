@@ -1,38 +1,32 @@
-# Web-User-Interface-Design
-## Lab 2
-### Website Purpose
-Window seller website
+# Project Title: Irish Windows
 
-### Target Audience
-People who want information and to buy a window
+## Table of Contents
+- [Introduction](#introduction)
+- [Target Audience](#target-audience)
+- [Key Features](#key-features)
+- [Learning Reflections](#learning-reflections)
+- [Development Updates](#development-updates)
 
-### Key Features
-#### HTML
-Cleaned up the html lab 1 to make it all more constistant and less duplicate style items
-Added in a table and form
-Added a new page in for a mailing list form
-#### CSS
-Remade and organised all of the css files into a more consistant style and removed duplicates
-Made cover image on home page scale with the size of the window
-Added media query to resize content on home page
-Added on hover to nav bar to change color when you hover over a link
-Styled a table and form
-Made the form and table look like the rest of the site
-Made the image of the man scale with screen size
-#### JS
-Preventing Submits from submitting data when enter pressed
-Added JS to let you enter data into the form and then change the tables data
-Added Regex to only allow numbers 
-Added a prevent default to stop page refresh with the form
-Made the mailing list form edit the information below form
-Made the mailing form check the data is valid
+## Introduction
+Irish windows is an online window selling store that lets customer browse and purchase windows. We also have a mailing list for users to keep up to date with
+new stock.
 
-### References
-https://stackoverflow.com/questions/8722163/how-to-assign-multiple-classes-to-an-html-container
-https://www.w3schools.com/csS/tryit.asp?filename=trycss3_flexbox_flex-wrap_nowrap8
-https://www.bing.com/search?pglt=171&q=media+query+css&cvid=ec971898822f469f9196859e5ac1396e&gs_lcrp=EgZjaHJvbWUqBggAEAAYQDIGCAAQABhAMgYIARAAGEAyBggCEEUYOTIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxAAGEAyBggIEAAYQDIHCAkQRRj8VdIBCDE0MjNqMGoxqAIAsAIA&FORM=ANNAB1&DAF0=1&PC=U531
-https://www.w3schools.com/html/html_table_borders.asp
-https://www.w3schools.com/html/html_table_styling.asp
-https://www.w3schools.com/html/html_forms.asp
-https://stackoverflow.com/questions/12278571/html-text-input-avoid-submit-when-enter-is-pressed
-https://stackoverflow.com/questions/74612/how-do-i-make-an-html-table-the-same-width-as-its-containing-div-tag
+## Target Audience
+Our primary audience is people mid 20s upwards looking to buy a window for their homes or for companys that want to buy windows to install them.
+
+## Key Features
+- **Week 1:** Information home page and products page and the title text turns yellow when clicked
+- **Week 2:** Refactored css and html, added forms with error checking, added mailing list page, added mobile responsiveness.
+
+## Learning Reflections
+### Challenges
+- **Week 1:** Trying to get the articles content to align how i wanted to was hard and took time.
+- **Week 2:** Styling the form and getting the javascript to update the form took some time to get working.
+
+### Insights
+- **Week 1:** I learned about resizing images and setting up a basic html structure
+- **Week 2:** I learned about regex and how it can be used with forms to find patterns of specific characters
+
+## Development Updates
+- **Week 1:** Created home page with information about the company and a products page. Made a navbar. Made h1 change to yellow on click. Styled page with css.
+- **Week 2:** Cleaned up css and html files to remove duplicates and made them more efficent. Added media querys and made home page mobile responsive. Added a form and table and styled them. Added error checking and regex for form. Made forms update the html on the page. Added mailing list page with form.
