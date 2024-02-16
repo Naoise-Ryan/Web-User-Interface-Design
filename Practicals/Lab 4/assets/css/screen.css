@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header,
+nav,
+article,
+section,
+aside,
+footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(121, 184, 180);
+}
+
+nav {
+    background-color: rgb(71, 134, 132);
+    display: flex;
+}
+
+article {
+    background-color: rgb(255, 255, 255);
+}
+
+aside {
+    background-color: rgb(121, 184, 180);
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(40, 87, 87);
+    text-align: center;
+    overflow: hidden;
+    height: auto;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/*------------------------------------Other stuff
+*/
+/*-----Nav bar stuff*/
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    background-color: rgb(71, 134, 132);
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: rgb(71, 88, 132);
+}
+
+/*Nav Buttons*/
+.activeButton {
+    color: rgb(3, 3, 3);
+    background-color: rgb(241, 219, 16);
+}
+
+.activeButton:hover {
+    background-color: rgb(241, 173, 16);
+}
+
+/*-----Aside stuff*/
+.asideContent {
+    margin: 10px;
+}
+
+/*------Section stuff*/
+.sectionTitle {
+    padding: 20px;
+    background-color: rgb(52, 100, 99);
+}
+
+.sectionContent {
+    padding: 20px;
+}
+
+.homeSections {
+    background-color: rgb(71, 134, 132);
+    color: white;
+}
+
+.homeSectionsHalf {
+    width: 50%;
+}
+
+.boxParent {
+    display: flex;
+}
+
+
+/*-----------------Page specific stuff
+*/
+/*------Home Page*/
+.coverImage {
+    width: 100%;
+    height: 5%;
+    max-width: 100%;
+    max-height: 500px;
+    display: flex;
+}
+
+.normalImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*------Product Page*/
+.productContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.productItem {
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 300px;
+    width: 75%;
+    background-color: rgb(51, 167, 163);
+}
+
+.productItemAltColor {
+    background-color: rgb(63, 199, 194);
+}
+
+.productTextElements {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.productTextElements h2 {
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.productTextElements button {
+    margin-top: 60px;
+    border-radius: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(231, 142, 39);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    cursor: pointer;
+}
+
+.productTextElements button:hover {
+    background-color: rgb(185, 114, 32);
+}
+
+
+.productItem img {
+    border: 4px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .productItem {
+        width: 100%;
+        height: 400px;
+        flex-direction: column;
+    }
+
+    .productTextElements {
+        height: 60%;
+    }
+
+    .productItem img {
+        width: 40%;
+        height: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        text-align: center;
+    }
+
+    .productTextElements button {
+        margin-top: 30px;
+        border-radius: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: medium;
+    }
+}
+
+/*------------------Other Universal
+*/
+.pHighlight {
+    color: yellow;
+    font-weight: bold;
+}
+
+.centerDiv {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    text-align: center;
+}
+
+/*----------------Tables
+*/
+.formTableBox {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 20px;
+    color: white;
+}
+
+table {
+    width: 100%;
+}
+
+th:hover,
+td:hover {
+    background-color: rgb(102, 187, 184);
+}
+
+th {
+    background-color: rgb(52, 100, 99);
+}
+
+td {
+    background-color: rgb(51, 167, 163);
+}
+
+.tableContainer {
+    overflow-x: auto;
+}
+
+/*---------------------Forms
+*/
+form,
+label,
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+    color: rgb(255, 255, 255);
+}
+
+label {
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.formContainer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(71, 134, 132);
+    color: white;
+}
+
+.asideContainer {
+    display: flex;
+}
+
+.containerItem {
+    width: 90%;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+aside:hover {
+    background-color: rgb(71, 134, 132);
+}
+
+@media screen and (max-width: 800px) {
+    .homeSectionsHalf {
+        width: 100%;
+    }
+
+    .boxParent {
+        display: block;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .containerItem {
+        width: 100%;
+    }
+}
+
+.boxChildren {
+    float: left;
+}
