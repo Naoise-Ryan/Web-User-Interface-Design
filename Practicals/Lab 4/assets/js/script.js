@@ -41,7 +41,7 @@ function receiveMailForm() {
     console.log(nameData, emailData, phoneData, checkboxData)
     var regExPattern = /^[0-9]*$/;
 
-    if(nameData === "" || emailData === "" || phoneData === ""){
+    if (nameData === "" || emailData === "" || phoneData === "") {
         alert("You did not fill out a data field")
     }
     else if (nameData.match(regExPattern)) {
@@ -55,11 +55,11 @@ function receiveMailForm() {
     }
 }
 
-function openPage(){
+function openPage() {
     window.open("https://www.google.ie/search?sca_esv=884448dcb0ad80d4&q=prize&tbm=isch&source=lnms&sa=X&ved", "newwindow", "width=800", "height=800")
 }
 
-function redirectThankYou(){
+function redirectThankYou() {
     window.location.href = "thankYouForPurchasing.html";
 }
 
@@ -74,7 +74,14 @@ homeForm.addEventListener("submit", submitForm);
 
 
 function appendProduct() {
-    alert("wow")
+    let appendSpot = document.getElementById("appendLocation")
+    let newDiv = document.createElement("div");
+    newDiv.classList.add("centerDiv")
+    let newPara = document.createElement("p");
+    newPara.innerHTML = "I am appended text";
+    newDiv.append(newPara)
+
+    appendSpot.append(newDiv)
 }
 
 

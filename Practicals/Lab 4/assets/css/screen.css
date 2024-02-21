@@ -351,3 +351,10 @@ video {
     font-weight: bold;
     font-size: 50px;
 }
+
+.appendButton {
+    background-color: rgb(71, 134, 132);
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+}

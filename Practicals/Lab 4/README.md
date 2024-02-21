@@ -31,10 +31,10 @@ Our primary audience is people mid 20s upwards looking to buy a window for their
 - **Week 1:** I learned about resizing images and setting up a basic html structure
 - **Week 2:** I learned about regex and how it can be used with forms to find patterns of specific characters
 - **Week 3:** Learned how flex boxs work to move different sections and position them, Learned about redirecting and opening links.
-- **Week 4:**
+- **Week 4:** 
 
 ## Development Updates
 - **Week 1:** Created home page with information about the company and a products page. Made a navbar. Made h1 change to yellow on click. Styled page with css.
 - **Week 2:** Cleaned up css and html files to remove duplicates and made them more efficent. Added media querys and made home page mobile responsive. Added a form and table and styled them. Added error checking and regex for form. Made forms update the html on the page. Added mailing list page with form.
 - **Week 3:** Added the aside in. Aside when clicked opens a new tab. Remade product page with flex boxes. Made Product page responsive on mobile. Made purchase button on product page redirect to a thank you page. Added hover css to elements
-- **Week 4:** Moved old home screen content into About us. Changed mailing list page into about us page. Added video and audio to homepage
+- **Week 4:** Moved old home screen content into About us. Changed mailing list page into about us page. Added video and audio to homepage. Made text that appends when button is clicked
