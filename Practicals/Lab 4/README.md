@@ -18,20 +18,20 @@ Our primary audience is people mid 20s upwards looking to buy a window for their
 - **Week 1:** Information home page and products page and the title text turns yellow when clicked
 - **Week 2:** Refactored css and html, added forms with error checking, added mailing list page, added mobile responsiveness.
 - **Week 3:** Flex box layout implemented, colors and styles changed and redirects and opening new tabs added
-- **Week 4:**
+- **Week 4:** Vidoe and audio on home page and button that appends text
 
 ## Learning Reflections
 ### Challenges
 - **Week 1:** Trying to get the articles content to align how i wanted to was hard and took time.
 - **Week 2:** Styling the form and getting the javascript to update the form took some time to get working.
 - **Week 3:** Getting the flex boxs to work took alot of research and reading of their documents to understand how to get them how I wanted them
-- **Week 4:**
+- **Week 4:** Creating the DOM elements and appending was tricky at first but didnt take long to figure out
 
 ### Insights
 - **Week 1:** I learned about resizing images and setting up a basic html structure
 - **Week 2:** I learned about regex and how it can be used with forms to find patterns of specific characters
 - **Week 3:** Learned how flex boxs work to move different sections and position them, Learned about redirecting and opening links.
-- **Week 4:** 
+- **Week 4:** Learned how to create DOM elements in javascript and appending them back into html
 
 ## Development Updates
 - **Week 1:** Created home page with information about the company and a products page. Made a navbar. Made h1 change to yellow on click. Styled page with css.
