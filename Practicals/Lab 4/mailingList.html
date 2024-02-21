@@ -17,14 +17,69 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a class="activeButton" href="mailingList.html">Join our mailing list</a></li>
-            <li><a href="index.html#Contact">Contact Us</a></li>
+            <li><a class="activeButton" href="mailingList.html">About Us</a></li>
         </ul>
     </nav>
 
     <article>
+        <div class="boxParent">
+            <!--Home section-->
+            <section class="homeSections homeSectionsHalf">
+                <h2 class="sectionTitle">Why we are the best!</h2>
+                <div class="sectionContent">
+                    <h3>Fun Facts!</h3>
+                    <ul>
+                        <li>Our windows are made with <span class="pHighlight">100% Irish
+                                materials</span>
+                        </li>
+                        <li>We can fulfill your order within two weeks</li>
+                        <li>Our new window technology makes our windows <span class="pHighlight">99%
+                                durable</span></li>
+                        <li>The world has never looked clearer</li>
+                        <li>We produce all our parts in house</li>
+                    </ul>
+                </div>
+            </section>
+            <!--About us section-->
+            <section class="homeSections homeSectionsHalf">
+                <h2 class="sectionTitle" id="About">About the owner</h2>
+                <div class="boxParent">
+                    <div class="sectionContent">
+                        <h3>John Doe</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Morbi dignissim risus et ante malesuada iaculis. Etiam pretium, velit eu ornare
+                            accumsan,
+                            arcu massa iaculis erat, in sodales mauris ipsum ac quam. Aliquam erat volutpat.
+                            Maecenas facilisis cursus dictum. Morbi tempus, orci quis molestie venenatis,
+                            leo dolor dictum nibh, vel ultricies nisi arcu eu libero. Praesent a elit quam.
+                            Nullam commodo pretium quam non mollis. Aliquam eu enim ut ante rhoncus efficitur at
+                            nec
+                            ex.
+                            Vestibulum ac libero ac odio scelerisque sagittis sed eu ante. In nibh felis,
+                            sollicitudin in maximus vitae, vestibulum non tortor.
+                        </p>
+                    </div>
+                    <div class="sectionContent">
+                        <img src="assets/imgs/John.jpg" alt="Man" class="normalImage">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--Contact us-->
+        <section class="homeSections">
+            <div class="centerDiv">
+                <h2 class="sectionTitle" id="Contact">Contact Us</h2>
+                <div class="sectionContent">
+                    <p>Phone Number - 012 345 6789</p>
+                    <p>Email Address - IrishWindows@mail.com</p>
+                    <p>Address - 9157 whatever street, downtown</p>
+                </div>
+            </div>
+        </section>
         <section>
             <div class="formContainer centerDiv">
+                <h2 class="sectionTitle">Join our mailing list</h2>
                 <form id="homeFormId" onsubmit="receiveMailForm()">
                     <label>Name</label><br>
                     <input type="text" id="mailNameId" onkeydown="if(event.keyCode == 13){return false}"><br>

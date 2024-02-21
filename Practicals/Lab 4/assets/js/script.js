@@ -72,6 +72,15 @@ function submitForm(event) {
 
 homeForm.addEventListener("submit", submitForm);
 
+
+function appendProduct() {
+    alert("wow")
+}
+
+
+
+
+
 window.onload = function () {
     alert("Welcome to the page")
 }

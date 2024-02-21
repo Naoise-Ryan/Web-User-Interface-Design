@@ -330,3 +330,24 @@ aside:hover {
 .boxChildren {
     float: left;
 }
+
+/*----------------Video*/
+video {
+    padding: 0;
+    margin: 0;
+}
+
+/*------Text overlay image*/
+
+.overlayContainer {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
