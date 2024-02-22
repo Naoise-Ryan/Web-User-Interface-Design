@@ -26,7 +26,7 @@
                 <div class="overlayContainer">
                     <section>
                         <img src="assets/imgs/Window.jpg" alt="Window" class="coverImage">
-                        <p class="overlay">A scenic view of a boat</p>
+                        <p id="overlayText" class="overlay" style="display: none;">A scenic view of a boat</p>
                     </section>
                 </div>
 
@@ -65,30 +65,34 @@
                 </div>
                 <div class="centerDiv">
                     <section>
-                        <video width="50%" height="50%" controls>
-                            <source src="assets/media/stockVideo.mp4" type="video/mp4">
-                            Your browser does not support this video player
-                        </video>
-                        <audio controls>
-                            <source src="assets/media/stockAudio.mp3" type="audio/mp3">
-                            Your browser does not support this audio player
-                        </audio>
+                        <div id="seeMoreId"><h2>Click to view a Video and Audio</h2></div>
+                        <div id="mediaSectionId">
+                            <video width="50%" height="50%" controls>
+                                <source src="assets/media/stockVideo.mp4" type="video/mp4">
+                                Your browser does not support this video player
+                            </video>
+                            <audio controls>
+                                <source src="assets/media/stockAudio.mp3" type="audio/mp3">
+                                Your browser does not support this audio player
+                            </audio>
+                        </div>
                     </section>
                 </div>
                 <section>
-                    <div class="centerDiv">
+                    <div class="centerDiv" style="background-color: rgb(71, 134, 132);">
                         <p id="appendLocation"></p>
-                        <button class="appendButton" type="button" onclick="appendProduct()">Create text</button>
+                        <button id="appendButtonId" class="appendButton" type="button" onclick="appendProduct()">Create
+                            text</button>
                     </div>
                 </section>
             </article>
         </div>
-        <div class="asideContent">
-            <aside onclick="openPage()" style="width: 10%;">
+        <aside onclick="openPage()" style="width: 10%;">
+            <div class="asideContent">
                 <h2>Click this box</h2>
                 <p>To get redirected to google</p>
-            </aside>
-        </div>
+            </div>
+        </aside>
     </div>
     <!--Footer-->
     <footer>
@@ -103,6 +107,18 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#overlayText").fadeIn();
+            $("#seeMoreId").click(function () {
+                $("#mediaSectionId").slideToggle("slow");
+            });
+        })
+        $("#appendButtonId").click(function (event) {
+            $(this).hide("slow");
+        });
+    </script>
 </body>
 
 </html>

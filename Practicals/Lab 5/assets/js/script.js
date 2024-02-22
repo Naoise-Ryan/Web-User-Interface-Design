@@ -80,7 +80,6 @@ function appendProduct() {
     let newPara = document.createElement("p");
     newPara.innerHTML = "I am appended text";
     newDiv.append(newPara)
-
     appendSpot.append(newDiv)
 }
 
