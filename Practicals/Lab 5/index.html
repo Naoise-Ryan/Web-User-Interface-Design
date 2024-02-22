@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Irish Windows</title>
+    <link rel="stylesheet" href="assets/css/screen.css">
+</head>
+
+<body>
+    <header>
+        <h1>Irish Windows</h1>
+        <h2>Making windows since 1995</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="activeButton" href="#">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="mailingList.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="asideContainer">
+        <div class="containerItem">
+            <article>
+                <section>
+                    <div class="overlayContainer">
+                        <img src="assets/imgs/Window.jpg" alt="Window" class="coverImage">
+                        <p class="overlay">A scenic view of a boat</p>
+                    </div>
+                </section>
+
+                <!--Table-->
+                <div class="formTableBox">
+                    <section>
+                        <div class="tableContainer">
+                            <table id="moneyTableId" class="centerDiv">
+                                <tr>
+                                    <th>Profits</th>
+                                    <th>Revenue</th>
+                                    <th>Inputed Data</th>
+                                    <th>Money</th>
+                                    <th>Dosh</th>
+                                </tr>
+                                <tr>
+                                    <td>100000$</td>
+                                    <td>30523.34$</td>
+                                    <td>Enter Data</td>
+                                    <td>3568542.34$</td>
+                                    <td>29525$</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="formContainer centerDiv">
+                            <form id="homeFormId" onsubmit="receiveForm()">
+                                <label for="">New number:</label><br>
+                                <input type="text" id="moneyId" onkeydown="if(event.keyCode == 13){return false}"><br>
+                                <!--If you press enter it doesnt submit data-->
+                                <input type="submit" value="Submit">
+                            </form>
+                    </section>
+                </div>
+                <section>
+                    <div class="centerDiv">
+                        <video width="50%" height="50%" controls>
+                            <source src="assets/media/stockVideo.mp4" type="video/mp4">
+                            Your browser does not support this video player
+                        </video>
+                        <audio controls>
+                            <source src="assets/media/stockAudio.mp3" type="audio/mp3">
+                            Your browser does not support this audio player
+                        </audio>
+                    </div>
+                </section>
+                <section>
+                    <div class="centerDiv">
+                        <p id="appendLocation"></p>
+                        <button class="appendButton" type="button" onclick="appendProduct()">Create text</button>
+                    </div>
+                </section>
+            </article>
+        </div>
+        <aside onclick="openPage()" style="width: 10%;">
+            <div class="asideContent">
+                <h1>Click this box</h1>
+                <p>To get redirected to google</p>
+            </div>
+        </aside>
+    </div>
+    <!--Footer-->
+    <footer>
+        <h1>Footer</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim risus et ante malesuada iaculis.
+        Etiam pretium, velit eu ornare accumsan, arcu massa iaculis erat, in sodales mauris ipsum ac quam.
+        Aliquam erat volutpat. Maecenas facilisis cursus dictum. Morbi tempus, orci quis molestie venenatis,
+        leo dolor dictum nibh, vel ultricies nisi arcu eu libero. Praesent a elit quam.
+        Nullam commodo pretium quam non mollis. Aliquam eu enim ut ante rhoncus efficitur at nec ex.
+        Vestibulum ac libero ac odio scelerisque sagittis sed eu ante. In nibh felis, sollicitudin in maximus vitae,
+        vestibulum non tortor.
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
