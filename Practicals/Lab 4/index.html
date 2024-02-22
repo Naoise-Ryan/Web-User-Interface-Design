@@ -23,12 +23,12 @@
     <div class="asideContainer">
         <div class="containerItem">
             <article>
-                <section>
-                    <div class="overlayContainer">
+                <div class="overlayContainer">
+                    <section>
                         <img src="assets/imgs/Window.jpg" alt="Window" class="coverImage">
                         <p class="overlay">A scenic view of a boat</p>
-                    </div>
-                </section>
+                    </section>
+                </div>
 
                 <!--Table-->
                 <div class="formTableBox">
@@ -55,15 +55,16 @@
                     <section>
                         <div class="formContainer centerDiv">
                             <form id="homeFormId" onsubmit="receiveForm()">
-                                <label for="">New number:</label><br>
+                                <label>New number:</label><br>
                                 <input type="text" id="moneyId" onkeydown="if(event.keyCode == 13){return false}"><br>
                                 <!--If you press enter it doesnt submit data-->
                                 <input type="submit" value="Submit">
                             </form>
+                        </div>
                     </section>
                 </div>
-                <section>
-                    <div class="centerDiv">
+                <div class="centerDiv">
+                    <section>
                         <video width="50%" height="50%" controls>
                             <source src="assets/media/stockVideo.mp4" type="video/mp4">
                             Your browser does not support this video player
@@ -72,8 +73,8 @@
                             <source src="assets/media/stockAudio.mp3" type="audio/mp3">
                             Your browser does not support this audio player
                         </audio>
-                    </div>
-                </section>
+                    </section>
+                </div>
                 <section>
                     <div class="centerDiv">
                         <p id="appendLocation"></p>
@@ -82,12 +83,12 @@
                 </section>
             </article>
         </div>
-        <aside onclick="openPage()" style="width: 10%;">
-            <div class="asideContent">
-                <h1>Click this box</h1>
+        <div class="asideContent">
+            <aside onclick="openPage()" style="width: 10%;">
+                <h2>Click this box</h2>
                 <p>To get redirected to google</p>
-            </div>
-        </aside>
+            </aside>
+        </div>
     </div>
     <!--Footer-->
     <footer>
