@@ -1,53 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Internet and The World Wide Web</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <header>
-            <div class="container">
-                <h1>Learning Resource: Internet and The World Wide Web</h1>
-            </div>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet and The World Wide Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+    <header>
         <div class="container">
-            <!-- Introduction to Web Architecture -->
-            <section id="web-architecture" class="web-architecture">
-                
+            <h1>Learning Resource: Internet and The World Wide Web</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Introduction to Web Architecture -->
+        <section id="web-architecture" class="web-architecture">
+            <article class="web-architectureContainer">
+                <h2>Introduction to Web Architecture</h2>
+                <p>Web architechture is the collection of servers and pcs around the world that are all connected together to share information and data 
+                    between each other.
+                </p>
+            </article>
+            <article class="web-architectureContainer">
+                <h2>Web Servers: Physical Vs. Virtual</h2>
+                <table>
+                    <tr>
+                        <th>
+                            <h3>Aspect</h3>
+                        </th>
+                        <th>
+                            <h3>Physical Server</h3>
+                        </th>
+                        <th>
+                            <h3>Virtual Server</h3>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Hardware</td>
+                        <td>Need big computers running software</td>
+                        <td>You dont need to run a virtual server because someone else is already running it</td>
+                    </tr>
+                    <tr>
+                        <td>Scalability</td>
+                        <td>You need to build or buy more computers and have a big area</td>
+                        <td>You can buy more server space from someone</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td>It is expensive to buy computers to store data</td>
+                        <td>Virtual servers can be cheaper because you are renting someone elses serber</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <!-- Web Protocols -->
+        <section id="web-protocols">
+            <h2>Web Protocols</h2>
+            <section class="webProtocolText">
+                <h3>HTTP:</h3>
+                <dd>
+                    <p>Hyper text Transfer protocol - HTTP is the method used to send packets over the internet</p>
+                </dd>
             </section>
-        
-            <!-- Web Protocols -->
-            <section id="web-protocols">
-                
+
+            <section class="webProtocolText" style="background-color: rgb(201, 201, 201);">
+                <h3>HTTPS:</h3>
+                <dd>
+                    <p>Hyper text transfer protocol secure - The S means that the connect between the server and the
+                        client
+                        is encrypted meaning noone can see what was content was requested and recevied</p>
+                </dd>
             </section>
-        
-            <!-- Web Concepts -->
-            <section id="web-concepts" class="web-concepts">
-                
+
+            <section class="webProtocolText">
+                <h3>TCP/IP:</h3>
+                <dd>
+                    <p>TCP Transmision control protocol - Is the protocol for how data is broken down into smaller
+                        packets
+                        to be sent over the web and how it is rebuilt into the original file.
+                        Internet Protocol - is a unique string of numbers that routers and servers have like an address
+                        and
+                        is used to guide and keep the packets together to get to their destination
+                    </p>
+                </dd>
             </section>
-        
-            <!-- Internet vs. The Web -->
-            <section id="internet-vs-web">
-                
+
+            <section class="webProtocolText" style="background-color: rgb(201, 201, 201);">
+                <h3>FTP:</h3>
+                <dd>
+                    <p>File transfer protocol is the method of uploading and downloading files across the web</p>
+                </dd>
             </section>
-        
-            <!-- Communication between Client and Server -->
-            <section id="client-server-communication" class="client-server">
-               
-            </section>
-        
-            <!-- Client-side Development Technologies -->
-            <section id="client-side-tech">
-                
-            </section>
-        </div>        
-    
-        <footer>
-            <p>Web UI Design Course - Year 2, Semester 2</p>
-        </footer>
-    </body>
-</html>    
+
+        </section>
+
+        <!-- Web Concepts -->
+        <section id="web-concepts" class="web-concepts">
+            <div class="concept-group leftContainer">
+                <div class="concept">
+                    <h2>URLs and DNS</h2>
+                    <p>A url is a unique set of words that a person can remember instead of an IPs numbers, When a user
+                        searchs a url a DNS server checks
+                        Finds the IP associated with that URL and sends it back to the browser
+                        The consists of the protocol which is how the user connected to the server
+                        The top level domain eg: .ie, .com, .net
+                        The location of the website eg: www the web
+                        The domain which is a unique name
+                        A sub domain which is another location in side the website
+                        Folder paths and resources which show the location of the currently viewed content
+
+                    </p>
+                    <figure class="imageContainer">
+                        <img src="example-url-structure.png">
+                        <figcaption>Figure 1: Structure of URL</figcaption>
+                    </figure>
+                </div>
+                <div class="concept">
+                    <h2>Types of TLDs and Their Examples</h2>
+                    <ul>
+                        <p>.ie - itcarlow.ie</p>
+                        <p>.com - google.com</p>
+                        <p>.net</p>
+                        <p>.irish</p>
+                        <p>.hair</p>
+                        <p>.cat</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="concept-group rightContainer">
+                <div class="concept">
+                    <h2>Cookies and Browsers</h2>
+                    <p>Cookies store bits of user information and data to allow companies to identify who you are across
+                        different sites and commonly used to server you unique tailored ads</p>
+                </div>
+                <div class="concept">
+                    <h2>The Concept of Caching</h2>
+                    <p>Websites can save bits of data to the local storage in your machine and then the same or other
+                        websites can access that data. It can be used to save data on a game or keep your items in a
+                        cart for shopping</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internet vs. The Web -->
+        <section id="internet-vs-web">
+            <h2>Internet vs. The Web</h2>
+            <table>
+                <tr>
+                    <th>
+                        <h3>Internet</h3>
+                    </th>
+                    <th>
+                        <h3>The Web</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>The internet stands for Interconnected network</td>
+                    <td>The web means the world wide web</td>
+                </tr>
+                <tr>
+                    <td>it is the physical connection between servers and computers and how they connect to each other</td>
+                    <td>It is how devices connect and interact with each other online</td>
+                </tr>
+            </table>
+
+            <h2>The Client-Server Model</h2>
+            <p>The client sends a request to a server requesting a specific page or data. The server validates this
+                request and then retrives the data and sends it to the
+                client. The client downloads the page and then displays it to the user using the browser
+            </p>
+        </section>
+
+        <!-- Communication between Client and Server -->
+        <section id="client-server-communication">
+            <h2>Request-Response Model</h2>
+            <p>The request response model is how a client sends a TCP/IP request to the server requesting data and then the server respondes with
+                the information which is sent in small packets that the TCP breaks down and the IP helps guide the packets to its destination.
+            </p>
+
+            <div class="client-server">
+                <h2>Stateless Protocols & WebSockets</h2>
+                <h3>Websockets</h3>
+                <p>Web sockets are a way for a browser and a server to stay connected and update data live such as an online game</p>
+            </div>
+        </section>
+
+        <!-- Client-side Development Technologies -->
+        <section id="client-side-tech">
+            <h2>Class-side Development Technologies</h2>
+            <p>Frontend development is when someone develops the webpage that a user will actually see and interact with, it consists of using HTML5 
+                HTML CSS and JavaScript. HTML is used to give a page structure, css is used to style things like color, spacing font etc and 
+                javascript gives a page functionality
+            </p>
+            <code>
+            <pre>// Sample JavaScript code snippet</pre>
+            <pre>document.getElementById("demo").innerHTML = "Hello World!";</pre>
+            </code>
+        </section>
+    </div>
+
+    <footer>
+        <p>Web UI Design Course - Year 2, Semester 2</p>
+    </footer>
+</body>
+
+</html>

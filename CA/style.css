@@ -40,3 +40,100 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+.web-architecture {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.web-architectureContainer {
+    width: 100%;
+    border: 1px solid rgb(185, 185, 185);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+table, th, td, tr {
+    border-collapse: collapse;
+    border: 1px solid rgb(224, 224, 224);
+    font-size: large;
+    padding: 10px;
+    color:  rgb(90, 90, 90);
+}
+
+th {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+}
+
+
+p {
+    color:  rgb(90, 90, 90);
+    font-size: larger;
+}
+
+.webProtocolText {
+    display: flex;
+    padding-left: 10px;
+}
+
+.web-concepts {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.leftContainer {
+    width: 55%;
+}
+
+.rightContainer {
+    width: 45%;
+    align-content: flex-start;
+}
+
+.concept-group {
+    border: 1px solid rgb(185, 185, 185);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.concept {
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageContainer {
+    border: 1px solid rgb(185, 185, 185);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imageContainer img {
+    width: 100%;
+}
+
+figcaption {
+    font-style: italic;
+    font-weight:lighter;
+    color: black;
+}
+
+.client-server {
+    background-color: white;
+    padding: 10px;
+    border-left: 5px solid rgb(187, 187, 187);
+}
