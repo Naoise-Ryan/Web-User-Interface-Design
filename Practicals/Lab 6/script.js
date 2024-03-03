@@ -55,18 +55,15 @@ function createWeatherLog(data) {
     enableDragAndDrop(logEntry);
 
     // Assign class names for styling purposes
-    //cityName.className = "city";
-    // temperature.className = "temperature";
-    // conditions.className = "conditions";
-    $(cityName).attr("className", "city")
-    $(temperature).attr("className", "temperature")
-    $(conditions).attr("className", "conditions")
+    cityName.className = "city";
+    temperature.className = "temperature";
+    conditions.className = "conditions";
 
     // Set the content of the elements based on the weather data
     cityName.textContent = data.name;
     temperature.textContent = `Temperature: ${data.main.temp}°C`;
     conditions.textContent = `Conditions: ${data.weather[0].main}`;
-    
+
 
     // Add classes to the temperature based on its value for styling (e.g., color coding)
     temperature.classList.remove('cold', 'mild', 'hot');
@@ -83,7 +80,9 @@ function createWeatherLog(data) {
     logEntry.appendChild(temperature);
     logEntry.appendChild(conditions);
     // document.getElementById('logList').appendChild(logEntry);
-    $("#logList").append(logEntry)
+    $("#logList").append(logEntry);
+    $(logEntry).hide();
+    $(logEntry).fadeIn(1000);
 
     // Animate the log entry's appearance using opacity
     logEntry.style.opacity = 0;
@@ -146,7 +145,11 @@ function sortByCity() {
     ascendListCity = !ascendListCity;
 
     logs.forEach(log => logList.appendChild(log)); // Re-append to apply the new order
+
+    $(logs).hide()
+    reorderFadeIn(0, logs)
 }
+
 
 // Function to sort the weather log entries by temperature
 function sortByTemperature() {
@@ -172,6 +175,9 @@ function sortByTemperature() {
     ascendListTemperature = !ascendListTemperature
 
     logs.forEach(log => logList.appendChild(log)); // Re-append to apply the new order
+    
+    $(logs).hide()
+    reorderFadeIn(0, logs)
 }
 
 function sortByCondition() {
@@ -197,12 +203,21 @@ function sortByCondition() {
     ascendListCondition = !ascendListCondition
 
     logs.forEach(log => logList.appendChild(log)); // Re-append to apply the new order
+
+    $(logs).hide()
+    reorderFadeIn(0, logs)
 }
 
 let ascendListCity = true
 let ascendListTemperature = true
 let ascendListCondition = true
 
-$(document).ready(function () {
-    //alert("we back")
-});
+function reorderFadeIn(i, t_logs) {
+    length = $(t_logs).length
+
+    if (i < length) {
+        console.log(i)
+        $(t_logs[i]).fadeIn(400)
+        setTimeout(function () { reorderFadeIn(i += 1, t_logs); }, 100);
+    }
+}
