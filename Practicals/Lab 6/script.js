@@ -1,15 +1,21 @@
 // Attach event listener to the submit button to trigger fetching weather data
-document.getElementById('submitBtn').addEventListener('click', function() {
+//document.getElementById('submitBtn').addEventListener('click', function() {
+$("#submitBtn").click(function () {
     // Retrieve the city name from the input field
-    const city = document.getElementById('cityInput').value;
+    //const city = document.getElementById('cityInput').value;
+    const city = $("#cityInput").val();
     // Call the function to fetch and display weather data for the specified city
     fetchWeatherData(city);
 });
 
 // Attach event listeners to sorting buttons for sorting by city name or temperature
-document.getElementById('sortByCity').addEventListener('click', sortByCity);
-document.getElementById('sortByTemp').addEventListener('click', sortByTemperature);
-document.getElementById('sortByCondition').addEventListener('click', sortByCondition);
+//document.getElementById('sortByCity').addEventListener('click', sortByCity);
+//document.getElementById('sortByTemp').addEventListener('click', sortByTemperature);
+//document.getElementById('sortByCondition').addEventListener('click', sortByCondition);
+$("#sortByCity").click(sortByCity);
+$("#sortByTemp").click(sortByTemperature);
+$("#sortByCondition").click(sortByCondition);
+
 
 // Function to fetch weather data from OpenWeatherMap API for a given city
 function fetchWeatherData(city) {
@@ -27,7 +33,7 @@ function fetchWeatherData(city) {
 
 // Function to generate a universally unique identifier (UUID)
 function uuidv4() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
         const r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
         return v.toString(16);
     });
@@ -41,26 +47,32 @@ function createWeatherLog(data) {
     const temperature = document.createElement('span');
     const conditions = document.createElement('span');
 
+
     // Generate a unique ID for each log entry and enable drag-and-drop
     const uniqueId = uuidv4();
-    logEntry.setAttribute('id', uniqueId);
+    //logEntry.setAttribute('id', uniqueId);
+    $(logEntry).attr("id", uniqueId)
     enableDragAndDrop(logEntry);
 
     // Assign class names for styling purposes
-    cityName.className = "city";
-    temperature.className = "temperature";
-    conditions.className = "conditions";
+    //cityName.className = "city";
+    // temperature.className = "temperature";
+    // conditions.className = "conditions";
+    $(cityName).attr("className", "city")
+    $(temperature).attr("className", "temperature")
+    $(conditions).attr("className", "conditions")
 
     // Set the content of the elements based on the weather data
     cityName.textContent = data.name;
     temperature.textContent = `Temperature: ${data.main.temp}°C`;
     conditions.textContent = `Conditions: ${data.weather[0].main}`;
+    
 
     // Add classes to the temperature based on its value for styling (e.g., color coding)
     temperature.classList.remove('cold', 'mild', 'hot');
-    if(data.main.temp < 10) {
+    if (data.main.temp < 10) {
         temperature.classList.add('cold');
-    } else if(data.main.temp >= 10 && data.main.temp < 25) {
+    } else if (data.main.temp >= 10 && data.main.temp < 25) {
         temperature.classList.add('mild');
     } else {
         temperature.classList.add('hot');
@@ -70,7 +82,8 @@ function createWeatherLog(data) {
     logEntry.appendChild(cityName);
     logEntry.appendChild(temperature);
     logEntry.appendChild(conditions);
-    document.getElementById('logList').appendChild(logEntry);
+    // document.getElementById('logList').appendChild(logEntry);
+    $("#logList").append(logEntry)
 
     // Animate the log entry's appearance using opacity
     logEntry.style.opacity = 0;
@@ -79,10 +92,12 @@ function createWeatherLog(data) {
 
 // Function to enable drag-and-drop functionality for log entries
 function enableDragAndDrop(logEntry) {
-    logEntry.setAttribute('draggable', true);
+    // logEntry.setAttribute('draggable', true);
+    $(logEntry).attr("draggable", true);
     logEntry.addEventListener('dragstart', handleDragStart);
     logEntry.addEventListener('dragover', handleDragOver);
     logEntry.addEventListener('drop', handleDrop);
+
 }
 
 // Function to handle the drag start event
@@ -102,20 +117,25 @@ function handleDrop(event) {
     const droppedOn = event.target.closest('li');
     const list = droppedOn.parentNode;
     const draggedElement = document.getElementById(draggedId);
+    //const draggedElement2 = $("#draggedId")[0];
+
     list.insertBefore(draggedElement, droppedOn.nextSibling);
 }
 
 // Function to sort the weather log entries by city name
 function sortByCity() {
-    const logList = document.getElementById('logList');
+    //const logList = document.getElementById('logList');
+    const logList = $("#logList")[0];
     const logs = Array.from(logList.children);
-    
+
     logs.sort((a, b) => {
-        const cityA = a.querySelector('span.city').textContent;
-        const cityB = b.querySelector('span.city').textContent;
-        
+        //const cityA = a.querySelector('span.city').textContent;
+        //const cityB = b.querySelector('span.city').textContent;
+        const cityA = $(a).find("span.city").text()
+        const cityB = $(b).find("span.city").text()
+
         let returnListType = null
-        if(ascendListCity) {
+        if (ascendListCity) {
             returnListType = cityA.localeCompare(cityB);
         }
         else {
@@ -124,27 +144,28 @@ function sortByCity() {
         return returnListType;
     });
     ascendListCity = !ascendListCity;
-    
+
     logs.forEach(log => logList.appendChild(log)); // Re-append to apply the new order
 }
 
 // Function to sort the weather log entries by temperature
 function sortByTemperature() {
-    const logList = document.getElementById('logList');
+    //const logList = document.getElementById('logList');
+    const logList = $("#logList")[0];
     const logs = Array.from(logList.children);
 
     logs.sort((a, b) => {
-        const tempA = parseFloat(a.querySelector('span.temperature').textContent.split(':')[1]);
-        const tempB = parseFloat(b.querySelector('span.temperature').textContent.split(':')[1]);
-        
+        //const tempA = parseFloat(a.querySelector('span.temperature').textContent.split(':')[1]);
+        //const tempB = parseFloat(b.querySelector('span.temperature').textContent.split(':')[1]);
+        const tempA = parseFloat($(a).find("span.temperature").text().split(':')[1])
+        const tempB = parseFloat($(b).find("span.temperature").text().split(':')[1])
+
         let returnListType = null
-        if(ascendListTemperature) {
+        if (ascendListTemperature) {
             returnListType = tempA - tempB;
-            console.log("asecnd")
         }
         else {
             returnListType = tempB - tempA;
-            console.log("inverse")
         }
         return returnListType;
     });
@@ -154,15 +175,18 @@ function sortByTemperature() {
 }
 
 function sortByCondition() {
-    const logList = document.getElementById("logList");
+    //const logList = document.getElementById("logList");
+    const logList = $("#logList")[0];
     const logs = Array.from(logList.children)
 
     logs.sort((a, b) => {
-        const condtionA = a.querySelector('span.conditions').textContent;
-        const condtionB = b.querySelector('span.conditions').textContent;
-        
+        //const condtionA = a.querySelector('span.conditions').textContent;
+        //const condtionB = b.querySelector('span.conditions').textContent;
+        const condtionA = $(a).find("span.conditions").text()
+        const condtionB = $(b).find("span.conditions").text()
+
         let returnListType = null
-        if(ascendListCondition) {
+        if (ascendListCondition) {
             returnListType = condtionA.localeCompare(condtionB);
         }
         else {
@@ -179,6 +203,6 @@ let ascendListCity = true
 let ascendListTemperature = true
 let ascendListCondition = true
 
-$(document).ready(function(){
-    alert("we back")
+$(document).ready(function () {
+    //alert("we back")
 });
