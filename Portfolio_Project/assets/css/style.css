@@ -97,7 +97,7 @@ hr {
 /*--------------Article classes and elements*/
 
 figure {
-    width: 35%;
+    width: 40%;
     border: 1px solid blue;
 }
 
@@ -107,7 +107,7 @@ figure img {
 }
 
 .articleTextContainer {
-    width: 65%;
+    width: 60%;
     border: 1px solid green;
 }
 
