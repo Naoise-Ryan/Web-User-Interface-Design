@@ -95,14 +95,15 @@ hr {
 }
 
 /*--------------Article classes and elements*/
+
 figure {
     width: 35%;
     border: 1px solid blue;
 }
 
 figure img {
+    height: auto;
     max-width: 100%;
-    max-height: 100%;
 }
 
 .articleTextContainer {
