@@ -20,13 +20,19 @@ nav {
 
 section {
     display: flex;
+    flex-direction: column;
     margin-left: 300px;
     border: 1px solid black;
-    padding: 100px;
+    padding: 126px;
 }
 
 article {
     border: 1px solid red;
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    max-height: 300px;
+    margin-bottom: 84px;
 }
 
 h1 {
@@ -34,9 +40,18 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
 a {
     font-size: 26px;
     font-weight: 500;
+}
+
+p {
+    font-size: 20px;
 }
 
 hr {
@@ -80,9 +95,29 @@ hr {
     text-decoration: none;
 }
 
+/*--------------Article classes and elements*/
+figure {
+    width: 35%;
+    border: 1px solid blue;
+}
+
+.articleTextContainer {
+    width: 65%;
+    border: 1px solid green;
+}
+
+.articleTextContainer h2{
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 26px;
+    }
+
+    h2 {
+        font-size: 23px;
+        font-weight: 550;
     }
 
     a {
@@ -101,6 +136,11 @@ hr {
         padding: 25px;
     }
 
+    article {
+        flex-direction: column;
+        max-height: 600px;
+        margin-bottom: 42px;
+    }
     /*---------------Nav Classes*/
     .navContainer {
         padding: 15px;
@@ -120,4 +160,14 @@ hr {
     .desktopBr {
         display: none;
     }
+
+    /*---------------article classes and elements*/
+    figure {
+        width: 100%;
+    }
+    
+    .articleTextContainer {
+        width: 100%;
+    }
+    
 }
