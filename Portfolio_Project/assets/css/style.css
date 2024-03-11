@@ -64,7 +64,7 @@ hr {
 }
 
 .desktopBr {
-    display: static;
+    display: block;
 }
 
 .navBranding {
