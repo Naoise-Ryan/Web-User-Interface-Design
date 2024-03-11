@@ -96,6 +96,10 @@ hr {
 
 /*--------------Article classes and elements*/
 
+.codingSection {
+    gap: 40px;
+}
+
 figure {
     width: 40%;
     border: 1px solid blue;
@@ -144,6 +148,28 @@ figure img {
 .aboutText {
     border: 1px solid rebeccapurple;
 }
+
+/*----------Animation*/
+.animationArticle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animationContainer {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid blue;
+    margin: auto;
+}
+
+.animationContainer figure {
+    margin: auto;
+    width: 250px;
+}
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 26px;
@@ -196,7 +222,42 @@ figure img {
 
     /*---------------article classes and elements*/
     figure {
+        width: 70%;
+        align-self: center;
+    }
+    
+    .articleTextContainer {
         width: 100%;
+    }
+
+    .aboutLeftContainer {
+        width: 100%;
+    }
+    
+    .aboutRightContainer {
+        width: 100%;
+    }
+
+    .articleAbout {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        padding: 25px;
+    }
+
+    article {
+        flex-direction: column;
+        margin-bottom: 42px;
+    }
+
+    /*---------------article classes and elements*/
+    figure {
+        width: 70%;
+        align-self: center;
     }
     
     .articleTextContainer {
