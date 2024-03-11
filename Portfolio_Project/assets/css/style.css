@@ -115,6 +115,32 @@ figure img {
     margin-bottom: 20px;
 }
 
+/*------------------------About Page*/
+.aboutLeftContainer {
+    width: 50%;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutRightContainer {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid yellow;
+    gap: 50px;
+}
+
+.aboutRightContainer figure {
+    width: 60%;
+}
+
+.aboutText {
+    border: 1px solid rebeccapurple;
+}
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 26px;
@@ -173,5 +199,4 @@ figure img {
     .articleTextContainer {
         width: 100%;
     }
-    
 }
