@@ -72,7 +72,10 @@ hr {
 }
 
 .navContainer {
+    display: flex;
+    flex-direction: column;
     padding: 30px;
+    height: 100%;
 }
 
 .navLinks li {
@@ -92,6 +95,10 @@ hr {
 
 .navLinks a {
     text-decoration: none;
+}
+
+.navLastUpdated {
+    
 }
 
 /*--------------Article classes and elements*/
