@@ -72,9 +72,9 @@ hr {
 }
 
 .navContainer {
-    display: flex;
-    flex-direction: column;
+    height: 75%;
     padding: 30px;
+    border: 1px solid red;
 }
 
 .navLinks li {
@@ -96,18 +96,22 @@ hr {
     text-decoration: none;
 }
 
+.navLastUpdated {
+    border: 1px solid black;
+}
+
 /*--------------Article classes and elements*/
 
 .codingSection {
     gap: 40px;
 }
 
-figure {
+.codingFigure {
     width: 40%;
     border: 1px solid blue;
 }
 
-figure img {
+.codingFigure img {
     height: auto;
     max-width: 100%;
 }
@@ -117,7 +121,7 @@ figure img {
     border: 1px solid green;
 }
 
-.articleTextContainer h2{
+.articleTextContainer h2 {
     margin-bottom: 20px;
 }
 
@@ -172,6 +176,25 @@ figure img {
     width: 250px;
 }
 
+/*------------Art*/
+.artGridContainer {
+    display: grid;
+    border: 1px solid yellow;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.artItem {
+    display: inline-block;
+    border: 1px solid black;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.artItem figure img {
+    max-width: 300px;
+}
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 26px;
@@ -202,6 +225,7 @@ figure img {
         flex-direction: column;
         margin-bottom: 42px;
     }
+
     /*---------------Nav Classes*/
     .navContainer {
         padding: 15px;
@@ -227,7 +251,7 @@ figure img {
         width: 70%;
         align-self: center;
     }
-    
+
     .articleTextContainer {
         width: 100%;
     }
@@ -235,7 +259,7 @@ figure img {
     .aboutLeftContainer {
         width: 100%;
     }
-    
+
     .aboutRightContainer {
         width: 100%;
     }
@@ -243,6 +267,10 @@ figure img {
     .articleAbout {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .artGridContainer {
+        grid-template-columns: auto;
     }
 }
 
@@ -261,7 +289,7 @@ figure img {
         width: 70%;
         align-self: center;
     }
-    
+
     .articleTextContainer {
         width: 100%;
     }
@@ -269,7 +297,7 @@ figure img {
     .aboutLeftContainer {
         width: 100%;
     }
-    
+
     .aboutRightContainer {
         width: 100%;
     }
@@ -277,5 +305,9 @@ figure img {
     .articleAbout {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .artGridContainer {
+        grid-template-columns: auto auto;
     }
 }
