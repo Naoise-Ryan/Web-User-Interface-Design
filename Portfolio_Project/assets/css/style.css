@@ -72,9 +72,9 @@ hr {
 }
 
 .navContainer {
-    height: 75%;
+    display: grid;
     padding: 30px;
-    border: 1px solid red;
+    height: 92%;
 }
 
 .navLinks li {
@@ -97,9 +97,7 @@ hr {
 }
 
 .navLastUpdated {
-    border: 1px solid black;
     align-self: flex-end;
-    justify-self: flex-end;
 }
 
 /*--------------Article classes and elements*/
@@ -181,7 +179,7 @@ img {
 .artGridContainer {
     display: grid;
     border: 1px solid yellow;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     gap: 20px;
 }
 
@@ -190,6 +188,44 @@ img {
     border: 1px solid black;
     min-width: 100px;
     min-height: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        padding: 25px;
+    }
+
+    article {
+        flex-direction: column;
+        margin-bottom: 42px;
+    }
+
+    /*---------------article classes and elements*/
+    figure {
+        width: 70%;
+        align-self: center;
+    }
+
+    .articleTextContainer {
+        width: 100%;
+    }
+
+    .aboutLeftContainer {
+        width: 100%;
+    }
+
+    .aboutRightContainer {
+        width: 100%;
+    }
+
+    .articleAbout {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .artGridContainer {
+        grid-template-columns: auto auto auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -243,47 +279,13 @@ img {
         display: none;
     }
 
+    .navLastUpdated {
+    margin-top: 10px;
+    }
+
     /*---------------article classes and elements*/
     figure {
         max-width: 100%;
-        width: 70%;
-        align-self: center;
-    }
-
-    .articleTextContainer {
-        width: 100%;
-    }
-
-    .aboutLeftContainer {
-        width: 100%;
-    }
-
-    .aboutRightContainer {
-        width: 100%;
-    }
-
-    .articleAbout {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .artGridContainer {
-        grid-template-columns: auto;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    section {
-        padding: 25px;
-    }
-
-    article {
-        flex-direction: column;
-        margin-bottom: 42px;
-    }
-
-    /*---------------article classes and elements*/
-    figure {
         width: 70%;
         align-self: center;
     }
