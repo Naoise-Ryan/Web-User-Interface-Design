@@ -100,6 +100,10 @@ hr {
     align-self: flex-end;
 }
 
+.hamburgerMenu {
+    display: none;
+}
+
 /*--------------Article classes and elements*/
 img {
     max-width: 100%;
@@ -261,7 +265,12 @@ img {
 
     /*---------------Nav Classes*/
     .navContainer {
+        display: grid;
         padding: 15px;
+        grid-template-areas:
+            "Title Hamburger"
+            "LastUpdated Hamburger"
+        ;
     }
 
     .navTitle {
@@ -280,7 +289,19 @@ img {
     }
 
     .navLastUpdated {
-    margin-top: 10px;
+        margin-top: 10px;
+        grid-area: "LastUpdated";
+    }
+
+    .hamburgerMenu {
+        display: block;
+        border: 1px solid green;
+        padding: 5px;
+        grid-area: "Hamburger";
+    }
+
+    #navTitleAndLinks {
+        grid-area: "Title";
     }
 
     /*---------------article classes and elements*/
