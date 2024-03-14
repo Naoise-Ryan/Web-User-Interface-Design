@@ -98,9 +98,15 @@ hr {
 
 .navLastUpdated {
     border: 1px solid black;
+    align-self: flex-end;
+    justify-self: flex-end;
 }
 
 /*--------------Article classes and elements*/
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 .codingSection {
     gap: 40px;
@@ -109,11 +115,6 @@ hr {
 .codingFigure {
     width: 40%;
     border: 1px solid blue;
-}
-
-.codingFigure img {
-    height: auto;
-    max-width: 100%;
 }
 
 .articleTextContainer {
@@ -191,10 +192,6 @@ hr {
     min-height: 100px;
 }
 
-.artItem figure img {
-    max-width: 300px;
-}
-
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 26px;
@@ -248,6 +245,7 @@ hr {
 
     /*---------------article classes and elements*/
     figure {
+        max-width: 100%;
         width: 70%;
         align-self: center;
     }
