@@ -9,15 +9,13 @@ $(".hamburgerMenu").on("click", function () {
 })
 
 function menuOpen(hamburgerMenu){
-    hamburgerMenu.css("display", "block");
-    $(".navContainer").css("display", "flex");
+    /*hamburgerMenu.css("display", "block");*/
+    hamburgerMenu.slideDown();
     $("#navTitleAndLinks").css("display", "block");
-    $(".navLastUpdated").css("display", "none")
 }
 
 function menuClose(hamburgerMenu){
-    hamburgerMenu.css("display", "none");
+    hamburgerMenu.slideUp();
     $("#navTitleAndLinks").css("display", "block")
     $(".navContainer").css("display", "grid");
-    $(".navLastUpdated").css("display", "block")
 }

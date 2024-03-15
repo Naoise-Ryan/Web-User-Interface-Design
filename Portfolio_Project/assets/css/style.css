@@ -267,6 +267,7 @@ img {
     .navContainer {
         display: grid;
         padding: 15px;
+        min-height: 52px;
         grid-template-areas:
             "Title Title Title Title Title Title Hamburger"
             "LastUpdated LastUpdated LastUpdated LastUpdated LastUpdated LastUpdated  Hamburger"
@@ -296,8 +297,8 @@ img {
     .hamburgerMenu {
         column-width: 100px;
         background-color: black;
-        width: 60px;
-        height: 60px;
+        max-width: 50px;
+        max-height: 50px;
         height: auto;
         display: block;
         border: 1px solid green;
