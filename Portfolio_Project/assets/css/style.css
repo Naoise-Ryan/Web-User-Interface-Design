@@ -268,8 +268,8 @@ img {
         display: grid;
         padding: 15px;
         grid-template-areas:
-            "Title Hamburger"
-            "LastUpdated Hamburger"
+            "Title Title Title Title Title Title Hamburger"
+            "LastUpdated LastUpdated LastUpdated LastUpdated LastUpdated LastUpdated  Hamburger"
         ;
     }
 
@@ -290,18 +290,56 @@ img {
 
     .navLastUpdated {
         margin-top: 10px;
-        grid-area: "LastUpdated";
+        grid-area: LastUpdated;
     }
 
     .hamburgerMenu {
+        column-width: 100px;
+        background-color: black;
+        width: 60px;
+        height: 60px;
+        height: auto;
         display: block;
         border: 1px solid green;
-        padding: 5px;
-        grid-area: "Hamburger";
+        grid-area: Hamburger;
     }
 
     #navTitleAndLinks {
-        grid-area: "Title";
+        grid-area: Title;
+    }
+
+    /*----------Hamburger*/
+    .hamburgerContainer {
+        display: none;
+        height: 250px;
+    }
+
+    .navHamburgerLinks li {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .navHamburgerLinks li .active {
+        color: #ff8b2f;
+        font-weight: 600;
+    }
+
+    .navHamburgerLinks a:hover {
+        color: #2f55ff;
+        font-weight: 700;
+    }
+
+    .navHamburgerLinks a {
+        text-decoration: none;
+        font-size: 23px;
+        width: 100%;
+        padding: 20px;
+        padding-left: 15px;
+    }
+
+    .hamburgerDivider {
+        border-top: 1px solid black;
+        width: 70%;
     }
 
     /*---------------article classes and elements*/
