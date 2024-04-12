@@ -47,9 +47,10 @@ a {
     font-weight: 500;
 }
 
-p {
+p, li {
     font-size: 20px;
 }
+
 
 hr {
     border: 1px solid #44382e;
@@ -133,7 +134,16 @@ img {
 }
 
 .articleTextContainer h2 {
+    padding-bottom: 15px;
+}
+
+.articleTextContainer h2 {
     margin-bottom: 20px;
+}
+
+.articleTextContainer ul {
+    margin-left: 25px;
+    margin-top: 10px;
 }
 
 /*------------------------About Page*/
