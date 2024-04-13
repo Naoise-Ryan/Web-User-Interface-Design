@@ -114,7 +114,7 @@ img {
 /*--------------Article classes and elements*/
 img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
 }
 
 .codingSection {
@@ -123,6 +123,7 @@ img {
 
 .codingImg {
     width: 40%;
+    height: 100%;
 }
 
 .codingFigure {
@@ -131,6 +132,12 @@ img {
 
 .articleTextContainer {
     width: 60%;
+}
+
+.articleTextContainer a {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .articleTextContainer h2 {
@@ -218,7 +225,7 @@ figcaption {
     width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     section {
         padding: 25px;
     }
@@ -226,6 +233,11 @@ figcaption {
     article {
         flex-direction: column;
         margin-bottom: 42px;
+    }
+
+    img {
+    min-height: auto;
+    min-width: 75%;
     }
 
     /*---------------article classes and elements*/
