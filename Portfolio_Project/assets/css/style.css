@@ -333,12 +333,15 @@ figcaption {
 
     .hamburgerMenu {
         column-width: 100px;
-        background-color: black;
         max-width: 50px;
         max-height: 50px;
         height: auto;
         display: block;
         grid-area: Hamburger;
+    }
+
+    .hamburgerMenu img {
+        border: 0;
     }
 
     #navTitleAndLinks {
